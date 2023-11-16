@@ -48,6 +48,17 @@ gem "bootsnap", require: false
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
+# Use the API to find out more about available gems
+gem "bootstrap", "~> 5.2"
+# a tool to parse CSS and add vendor prefixes to CSS rules using values from the Can I Use database.
+gem "autoprefixer-rails"
+# 'font-awesome-sass' is a Sass-powered version of Font Awesome for your Ruby projects with specific support for Ruby on Rails and Sprockets
+gem "font-awesome-sass", "~> 6.1"
+# Installation. Add it to your Gemfile: gem 'simple_form'. Run the following command to install it: bundle install. Run the generator: rails generate simple_form
+gem "simple_form"
+# on of Sass, LibSass, into the asset pipeline. In one larger project, this made compilation 4x faster:
+gem "sassc-rails"
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
@@ -62,6 +73,8 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
+
 end
 
 gem 'rspec-rails', group: [ :test ]
