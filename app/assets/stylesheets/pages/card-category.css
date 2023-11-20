@@ -1,5 +1,3 @@
-// Import page-specific CSS files here.
-@import "home";
 .card-category {
   background-size: cover;
   background-position: center;
@@ -13,7 +11,6 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  background-image: url("https://www.hollywoodreporter.com/wp-content/uploads/2011/11/antonio_banderas_skin_a_l.jpg");
 }
 .card-category {
   background-size: cover;

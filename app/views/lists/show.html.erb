@@ -1,0 +1,5 @@
+<div class="container m-5">
+  <h2>Here is your movie list: <%= @list.name %></h2>
+  <%= link_to "Add a new movie bookmark to my list", new_list_bookmark_path(@list.id) %>
+  <%= link_to "Back home", root_path %>
+</div>

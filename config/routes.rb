@@ -1,6 +1,22 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  root 'lists#index'
+  resources :lists do
+    resources :bookmarks
+  end
+  #   root    GET    /                          lists#index
+  #   lists   GET    /lists(.:format)           lists#index
+  #           POST   /lists(.:format)           lists#create
+  # new_list  GET    /lists/new(.:format)       lists#new
+  # edit_list GET    /lists/:id/edit(.:format)  lists#edit
+  #    list   GET    /lists/:id(.:format)       lists#show
+  #           PATCH  /lists/:id(.:format)       lists#update
+  #           PUT    /lists/:id(.:format)       lists#update
+  #           DELETE /lists/:id(.:format)       lists#destroy
 end
+
+# TODO: Models
+# TODO: Migrate
+
+# TODO: Routes
+# TODO: Controller & Action
+# TODO: View

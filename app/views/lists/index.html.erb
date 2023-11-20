@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="index.scss">
+</head>
+<body>
+
+<div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://www.google.com/
+https://www.hollywoodreporter.com/wp-content/uploads/2011/11/antonio_banderas_skin_a_l.jpg)">
+  Breakfast
+</div>
+
+
+
+<div class="container">
+  <h1>Welcome to Pascal's Watch List 🎨</h1>
+
+  <% @lists.each do |list| %>
+  <ul>
+    <li>
+    <%= link_to list.name, list_path(list.id) %>
+    </li>
+  </ul>
+  <% end %>
+
+  <%= link_to "Create a new movie list", new_list_path %>
+</div>
+
+</body>
+</html>
